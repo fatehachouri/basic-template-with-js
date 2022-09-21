@@ -1,0 +1,129 @@
+:root{
+    --main-color:#0fc690;
+    --main-transition:0.3s;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+ul{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/* start navbar */
+.nav{
+    min-height: 70px;
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.logo{
+    font-size: 45px;
+    color: white;
+    margin-right: 100px;
+}
+.nav .navitems{
+    margin-right: 50px;
+}
+.nav .navitems a{
+    color: white;
+    font-size: 25px;
+    margin-right: 32px;
+    transition: var(--main-transition);
+    text-transform: uppercase;
+}
+.nav .navitems a:hover ,.nav .search span:hover{
+    color: black;
+    transition: var(--main-transition);
+}
+.nav .search span{
+    font-size: 40px;
+    color: white;
+    margin-right: 30px;
+}
+/* End navbar */
+
+/* Start Basic */
+.basic{
+    position: relative;
+}
+.basic img{
+    max-width: 100%;
+
+}
+.basic .parentcontent{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    display: block;
+    width: 800px;
+}
+.basic h3{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+.basic p{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    margin-top: 10px;
+}
+.basic button{
+text-align: center;
+margin-top: 30px;
+padding: 20px;
+background-color: var(--main-color);
+color: white;
+font-size: 30px;
+border: none;
+transition: var(--main-transition);
+margin-left: 280px;
+}
+.basic button:hover{
+    color: black;
+}
+.basic .left{
+position: absolute;
+top: 250px;
+left: -20px;
+}
+.basic .right{
+position: absolute;
+top: 250px;
+right: -20px;
+}
+.basic span{
+    color: black;
+    font-size: 50px;
+    border-radius: 50px;
+    background-color: white;
+    transition: var(--main-transition);
+}
+.basic span:hover{
+background-color: var(--main-color);
+color: white;
+}
+/* End Basic */
