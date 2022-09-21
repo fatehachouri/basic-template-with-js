@@ -47,3 +47,35 @@ function slidshowprevieus(){
     }
 
 }
+var inptname=document.getElementById("inptname");
+var inptemail=document.getElementById("inptemail");
+var inptpassword=document.getElementById("inptpwd");
+var errname=document.getElementById("errname");
+var erremail=document.getElementById("erremail");
+var errpwd=document.getElementById("errpwd");
+
+
+function validatform(){
+if(inptname.value==""||inptname=="null"){
+    inptname.style.border="2px solid red";
+    errname.textContent="you must whrite your name";
+    return false;
+}
+if(inptemail.value=="" || inptemail.value==null){
+    inptemail.style.border="2px solid red";
+    erremail.textContent="you must write your email ";
+
+    return false;
+}
+if(inptpassword.value.length<=8){
+    inptemail.style.border="2px solid red";
+    errpwd.textContent="your password must be greater than 6";
+
+    return false;
+}
+
+else {
+    return true;
+}
+
+}
